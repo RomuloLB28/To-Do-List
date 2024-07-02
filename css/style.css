@@ -32,19 +32,25 @@ section {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-#input-text{
-    width: 50vh;
+#input-text {
     height: 30px;
+    flex: 1;
 }
 
-#add{
-    width: 80px;
-    height: 30px;
-    border-radius: 5px;
-    outline: none;
+#add {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 10px;
 }
 
 footer {
@@ -52,4 +58,32 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+.div {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.note-text {
+    flex: 1;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
 }
